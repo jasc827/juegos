@@ -1,0 +1,113 @@
+.mesa{
+	background-image: url("../img/cartas/fondo.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 150px;
+	width: 90%;
+	height: 550px;
+	font-size: 10px;
+	color: white;
+	border: 10px solid #3E0F05;
+}
+
+.tabla{
+	background-image: url("../img/cartas/madera.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 150px;
+	border: 10px solid #3E0F05;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	justify-content: center;
+	height: 650px;
+}
+
+.mano_casa{
+	width: 80%;
+	height: auto;
+	position: relative;
+	left: 75px;
+	top: 20px;
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.mano_jugador{
+	width: 80%;
+	height: auto;
+	position: relative;
+	left: 75px;
+	top: 100px;
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+#btn-jugador-mas, #btn-jugador-quedarse, #btn-jugador-reiniciar{
+	position: relative;
+	top: 150px;
+	left: 60%;
+	width: 10%;
+	height: 10%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#btn-jugador-mas{
+	background-image: url("../img/cartas/agregar.jpg");
+	
+}
+
+#btn-jugador-quedarse{
+	background-image: url("../img/cartas/quedarse.jpg");
+	
+}
+
+#btn-jugador-reiniciar{
+	background-image: url("../img/cartas/reiniciar.jpg");
+	left: 360px;
+	display: none;
+}
+
+.carta{
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-left: 10px;
+	width: 100px;
+	height: 120px;
+	background-size: 100% 100%;
+	
+}
+
+.footer{
+	background-color: #4B4848;
+	padding: 20px;
+	color: white;
+}
+
+.footer .row{
+	margin-top: 10px;
+}
+
+.redes{
+	list-style: none;
+	float: right;
+}
+
+.redes li a img{
+	width: 30px;
+	height: 30px;
+}
+
+.redes li{
+	display: inline-block;
+	margin-left: 20px;
+}
+

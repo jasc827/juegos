@@ -1,0 +1,70 @@
+@font-face{
+	font-family: "Fuente";
+	src: url("../fuentes/Amigos.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body{
+	background: url('../img/index/madera.jpg');
+	background-size: 100% 100%;
+}
+
+.container nav{
+	display: none;
+}
+
+#carouselExampleIndicators{
+	display: none;
+	margin-top: 20px;
+}
+
+.carousel-inner img{
+	
+	height: 400px;
+
+}
+
+.jumbotron{
+	margin-top: 50px;
+	background: url('../img/index/fondo.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	font-family: Fuente;
+	color: #059831;
+}
+
+p{
+	font-size: 20px;
+
+}
+
+.jumbotron a{
+	margin-top: 20px;
+}
+
+.footer{
+	background-color: #4B4848;
+	padding: 20px;
+	color: white;
+}
+
+.footer .row{
+	margin-top: 10px;
+}
+
+.redes{
+	list-style: none;
+	float: right;
+}
+
+.redes li a img{
+	width: 30px;
+	height: 30px;
+}
+
+.redes li{
+	display: inline-block;
+	margin-left: 20px;
+}
+

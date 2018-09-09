@@ -1,0 +1,384 @@
+.cajon{	
+	margin:auto;
+	padding: auto;
+	height: auto;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	flex-flow:column;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: url('../img/chess-icons/madera.jpg');
+	border-radius: 15px;
+
+}
+
+.cajon h1{
+	margin-top: 0;
+	font-family: DejaVuSansMono;
+	font-size: 20pt;
+	margin-bottom: 3px;
+}
+
+#bru:hover,#rst:hover,#menun:hover,#bru:active,#rst:active,#menun:active{
+	color:white;
+	background-color: black;
+}
+
+#bru,#rst,#menun{
+	margin-top: 5px;
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 12pt;
+	font-family: Consolas;
+	background-color: white;
+}
+#bru,#rst{
+	margin-right: 10px;
+}
+
+#parrt{
+	font-size: 15pt;
+}
+
+#tab{
+	
+	border-image: url('../img/chess-icons/madera.jpg');
+	display: flex;
+	flex-flow:row wrap;
+	width: 500px;
+}
+
+.cnegro{	
+	background-color: rgba(33,47,60,0.8);
+	border:1px solid rgba(0,0,0,0.3);
+	height: 60px;
+	width: 60px;
+	-webkit-transition: all 300ms;
+       -moz-transition: all 300ms;
+        -ms-transition: all 300ms;
+         -o-transition: all 300ms;
+            transition: all 300ms;
+}
+.cblanco{
+	background-color: rgba(255,255,255,0.8);
+	border:1px solid rgba(0,0,0,0.3);
+	height: 60px;
+	width: 60px;
+	-webkit-transition: all 300ms;
+       -moz-transition: all 300ms;
+        -ms-transition: all 300ms;
+         -o-transition: all 300ms;
+            transition: all 300ms;	
+}
+.cmover{
+	background-color: rgba(18,224,80,0.8);
+	border:1px solid rgba(0,0,0,0.3);
+	height: 60px;
+	width: 60px;	
+	-webkit-transition: all 600ms;
+       -moz-transition: all 600ms;
+        -ms-transition: all 600ms;
+         -o-transition: all 600ms;
+            transition: all 600ms;
+}
+.cmover1{
+	background-color: rgba(193,110,245,0.8);
+	border:1px solid rgba(0,0,0,0.3);
+	height: 60px;
+	width: 60px;	
+	-webkit-transition: all 600ms;
+       -moz-transition: all 600ms;
+        -ms-transition: all 600ms;
+         -o-transition: all 600ms;
+            transition: all 600ms;
+}
+.cmover2{
+	background-color: rgba(18,196,255,0.5);
+	border:1px solid rgba(0,0,0,0.3);
+	height: 60px;
+	width: 60px;	
+	-webkit-transition: all 600ms;
+       -moz-transition: all 600ms;
+        -ms-transition: all 600ms;
+         -o-transition: all 600ms;
+            transition: all 600ms;
+}
+
+
+.cajon div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1pt;	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.cnegro div, .cblanco div{
+	width: 80%;
+	height: 80%;
+	background-repeat: no-repeat;
+}
+
+
+.cmover div{
+	width: 60%;
+	height: 60%;
+	background-repeat: no-repeat;
+}
+
+#colbla div, #colneg div, #colbla1 div, #colneg1 div{
+	width: 70%;
+	height: 70%;
+	background-repeat: no-repeat;
+
+}
+
+#elegirbl div div, #elegirn div div{
+	width: 80%;
+	height: 80%;
+	background-repeat: no-repeat;
+
+}
+
+.lblanco1{
+	color: white;
+	text-shadow: -1px 0 rgba(0,0,0,0.9), 0 1px rgba(0,0,0,0.9), 1px 0 rgba(0,0,0,0.9), 0 -1px rgba(0,0,0,0.9);
+}
+
+.lnegro1{
+	text-shadow: -1px 0 rgba(255,255,255,0.4), 0 1px rgba(255,255,255,0.4), 1px 0 rgba(255,255,255,0.4), 0 -1px rgba(255,255,255,0.4);
+}
+
+
+#mm{
+	display: none;
+}
+
+#opc{
+	margin-top: 7px;
+}
+.roj{
+	background-color: red;
+}
+
+#elegirbl{
+	margin-top: 3px;
+	-webkit-transition: all 1600ms;
+       -moz-transition: all 1600ms;
+        -ms-transition: all 1600ms;
+         -o-transition: all 1600ms;
+            transition: all 1600ms;
+}
+#ppbl{
+	margin: 0;
+	margin-top: 3px;
+	-webkit-transition: all 1600ms;
+       -moz-transition: all 1600ms;
+        -ms-transition: all 1600ms;
+         -o-transition: all 1600ms;
+            transition: all 1600ms;
+}
+#elegirn{
+	margin-bottom: 6px;
+	-webkit-transition: all 1600ms;
+       -moz-transition: all 1600ms;
+        -ms-transition: all 1600ms;
+         -o-transition: all 1600ms;
+            transition: all 1600ms;
+}
+#ppn{
+	margin: 0;
+	margin-bottom: 3px;
+	-webkit-transition: all 1600ms;
+       -moz-transition: all 1600ms;
+        -ms-transition: all 1600ms;
+         -o-transition: all 1600ms;
+            transition: all 1600ms;
+}
+
+.inv{
+	display: none;
+	opacity: 0;
+	-webkit-transition: all 1600ms;
+       -moz-transition: all 1600ms;
+        -ms-transition: all 1600ms;
+         -o-transition: all 1600ms;
+            transition: all 1600ms;
+}
+
+.cajon button{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.footer{
+	background-color: #4B4848;
+	padding: 20px;
+	color: white;
+}
+
+.footer .row{
+	margin-top: 10px;
+}
+
+.redes{
+	list-style: none;
+	float: right;
+}
+
+.redes li a img{
+	width: 30px;
+	height: 30px;
+}
+
+.redes li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+
+#colbla,#colneg,#colbla1,#colneg1{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 480px;
+	margin: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: url('../img/chess-icons/madera.jpg');
+}
+
+#mm, #parrt{
+	font-family: Verdana;
+}
+
+#mm{
+	margin: 5px;
+}
+
+.tach{
+	text-decoration: line-through;
+}
+
+#b_gris{
+	display: none;
+}
+iframe{
+	display: none;
+}
+center{
+	display: none;
+}
+
+@media (max-width:650px){
+	#colbla , #colneg1{
+		display: none;
+	}
+}
+@media (max-width:530px){
+	#colba,#colbla1,#colneg,#colneg1{
+		display: none;
+	}
+}
+
+@media (max-width:500px){
+	#mm{
+		display: none;
+	}
+	#colba,#colbla1,#colneg,#colneg1{
+		display: none;
+	}
+
+	#parrt{
+	font-size: 11pt;
+	}
+
+	#tab{
+		border: 3px solid black;
+		display: flex;
+		flex-flow:row wrap;
+		width: 336px;
+	}
+	.cnegro{	
+		background-color: rgba(0,0,0,0.8);
+		border:1px solid rgba(0,0,0,0.3);
+		height: 40px;
+		width: 40px;
+		-webkit-transition: all 300ms;
+	       -moz-transition: all 300ms;
+	        -ms-transition: all 300ms;
+	         -o-transition: all 300ms;
+	            transition: all 300ms;
+	}
+	.cblanco{
+		background-color: rgba(255,255,255,0.8);
+		border:1px solid rgba(0,0,0,0.3);
+		height: 40px;
+		width: 40px;
+		-webkit-transition: all 300ms;
+	       -moz-transition: all 300ms;
+	        -ms-transition: all 300ms;
+	         -o-transition: all 300ms;
+	            transition: all 300ms;	
+	}
+	.cmover{
+		background-color: rgba(18,224,80,0.8);
+		border:1px solid rgba(0,0,0,0.3);
+		height: 40px;
+		width: 40px;	
+		-webkit-transition: all 600ms;
+	       -moz-transition: all 600ms;
+	        -ms-transition: all 600ms;
+	         -o-transition: all 600ms;
+	            transition: all 600ms;
+	}
+	.cmover1{
+		background-color: rgba(193,110,245,0.8);
+		border:1px solid rgba(0,0,0,0.3);
+		height: 40px;
+		width: 40px;	
+		-webkit-transition: all 600ms;
+	       -moz-transition: all 600ms;
+	        -ms-transition: all 600ms;
+	         -o-transition: all 600ms;
+	            transition: all 600ms;
+	}
+	.cmover2{
+		background-color: rgba(18,196,255,0.5);
+		border:1px solid rgba(0,0,0,0.3);
+		height: 40px;
+		width: 40px;	
+		-webkit-transition: all 600ms;
+	       -moz-transition: all 600ms;
+	        -ms-transition: all 600ms;
+	         -o-transition: all 600ms;
+	            transition: all 600ms;
+	}	
+	.cajon div{
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1pt;	
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	.cajon h1{
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
+
